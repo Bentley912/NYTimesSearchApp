@@ -32,8 +32,8 @@ var urlBase =  "https://api.nytimes.com/svc/search/v2/articlesearch.json";
 
           $('#article-'+i).append('<h3>'+NYTData.response.docs[i].headline.main +'</h3>');
           $('#article-'+i).append('<a>'+NYTData.response.docs[i].web_url +'</a>');
-          $('#article-'+i).append('<h2>'+NYTData.response.docs[i].section_name +'</h2>');
-          $('#article-'+i).append('<h2>'+NYTData.response.docs[i].pub_date+'</h2>');
+          $('#article-'+i).append('<h5>'+NYTData.response.docs[i].section_name +'</h5>');
+          $('#article-'+i).append('<h5>'+NYTData.response.docs[i].pub_date+'</h5>');
 
         }
         console.log(urlBase);
