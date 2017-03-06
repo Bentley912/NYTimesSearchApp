@@ -79,6 +79,11 @@ var urlBase =  "https://api.nytimes.com/svc/search/v2/articlesearch.json";
 
       runQuery(numResult, newUrl);
     })
+
+    $('#clearResults').on('click', function(){
+
+      $('#wellSection').empty();
+    })
 //functions
 
 //main process
