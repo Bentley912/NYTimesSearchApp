@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title></title>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" > <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+      <link rel="stylesheet" href="style.css"/>
+      <script src="https://use.fontawesome.com/4784f46468.js"></script>
+    </head>
+
+      <body>
+
+<div class="container">
+          <div class="row" id="container1">
+            <h1> <i class="fa fa-newspaper-o" aria-hidden="true"></i>New York Times App</h1>
+          </div>
+
+      <div class="row">
+        <div class="panel panel-default">
+         <div class="panel-heading">
+           <h3 class="panel-title">Search Paramaters</h3>
+         </div>
+         <div class="panel-body">
+           <div class="input-group">
+                <label for="searchParam">Search Term</label>
+                <input type="text" class="form-control" placeholder="Search Terms" aria-describedby="basic-addon1" id ="searchParam" value=''>
+                </input>
+            </div>
+
+            <div class="form-group">
+              <label for="years">Number of Records to Retrieve:</label>
+              <select class="form-control" id="recordNum">
+               <option value='1'>1</option>
+               <option value ='5' selected="">5</option>
+               <option value='10'>10</option>
+              </select>
+            </div>
+            <div class="input-group">
+                 <label for="startYear">Start Year(Optional)</label>
+                 <input type="text" class="form-control" placeholder="Search Terms" aria-describedby="basic-addon1" id = "startYear" value=''>
+                 </input>
+             </div>
+
+             <div class="input-group">
+                  <label for="endYear">End Year(Optional)</label>
+                  <input type="text" class="form-control" placeholder="Search Terms" aria-describedby="basic-addon1" id = "endYear" value=''>
+                  </input>
+              </div>
+              <button class="btn btn-default" id="searchButton" type="submit">Search</button>
+              <button class="btn btn-default" id="clearResults">Clear Results</button>
+         </div>
+       </div>
+    </div>
+
+    <div class="row">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Top Articles</h3>
+              </div>
+              <div class="panel-body" id="resultsHere">
+
+            </div>
+          </div>
+    </div>
+  </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+  <script src="logic.js"></script>
+</body>
+
+
+  </html>
